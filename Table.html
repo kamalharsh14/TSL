@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="TSL_Table.css">
+    <script src="TSL_Table.js"></script>
+    <title>TSL Table</title>
+    <link rel="icon" href="logo.png">
+</head>
+
+<body>
+    <table class="table table-striped table-bordered">
+        <tr>
+            <th colspan="5">PROTECTION SUMMARY</th>
+        </tr>
+        <tr>
+            <th>Sno &nbsp;</th>
+            <th colspan="3">Descriptions</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <th>1.</th>
+            <th><textarea id="desc1"></textarea></th>
+            <th class="remarks"><input id="cb11" type="checkbox">Yes</th>
+            <th class="remarks"><input id="cb12" type="checkbox">N/A</th>
+            <th><textarea id="rem1"></textarea></th>
+        </tr>
+        <tr>
+            <th>2.</th>
+            <th><textarea id="desc2"></textarea></th>
+            <th class="remarks"><input id="cb21" type="checkbox">Yes</th>
+            <th class="remarks"><input id="cb22" type="checkbox">N/A</th>
+            <th><textarea id="rem2"></textarea></th>
+
+        </tr>
+        <tr>
+            <th>3.</th>
+            <th><textarea id="desc3"></textarea></th>
+            <th class="remarks"><input id="cb31" type="checkbox">Yes</th>
+            <th class="remarks"><input id="cb32" type="checkbox">N/A</th>
+            <th><textarea id="rem3"></textarea></th>
+        </tr>
+        <tr>
+            <th>4.</th>
+            <th><textarea id="desc4"></textarea></th>
+            <th class="remarks"><input id="cb41" type="checkbox">Yes</th>
+            <th class="remarks"><input id="cb42" type="checkbox">N/A</th>
+            <th><textarea id="rem4"></textarea></th>
+        </tr>
+        <tr>
+            <th>5.</th>
+            <th><textarea id="desc5"></textarea></th>
+            <th class="remarks"><input id="cb51" type="checkbox">Yes</th>
+            <th class="remarks"><input id="cb52" type="checkbox">N/A</th>
+            <th><textarea id="rem"></textarea></th>
+        </tr>
+    </table><br>
+    <table class="table table-striped table-bordered">
+        <tr>
+            <th colspan="6">MEASUREMENT CHECKS</th>
+        </tr>
+        <tr>
+            <th rowspan="2" class="phase"> Phase </th>
+            <th rowspan="2" class="current"> Current<br> Injected(A) </th>
+            <th colspan="4" class="primary"> Primary Current Displayed on Relay in Amps </th>
+        </tr>
+        <tr>
+            <th>R</th>
+            <th>Y</th>
+            <th>B</th>
+            <th>N</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="phasein1"></td>
+            <td><input type="number" id="currentin1" onblur="numericvalidationforcurrentin1()"></td>
+            <td><input type="number" id="R1" onblur="numericvalidationforR1()"></td>
+            <td><input type="number" id="Y1" onblur="numericvalidationforY1()"></td>
+            <td><input type="number" id="B1" onblur="numericvalidationforB1()"></td>
+            <td><input type="number" id="N1" onblur="numericvalidationforN1()"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="phasein2"></td>
+            <td><input type="number" id="currentin2" onblur="numericvalidationforcurrentin2()"></td>
+            <td><input type="number" id="R2" onblur="numericvalidationforR2()"></td>
+            <td><input type="number" id="Y2" onblur="numericvalidationforY2()"></td>
+            <td><input type="number" id="B2" onblur="numericvalidationforB2()"></td>
+            <td><input type="number" id="N2" onblur="numericvalidationforN2()"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="phasein3"></td>
+            <td><input type="number" id="currentin3" onblur="numericvalidationforcurrentin3()"></td>
+            <td><input type="number" id="R3" onblur="numericvalidationforR3()"></td>
+            <td><input type="number" id="Y3" onblur="numericvalidationforY3() "></td>
+            <td><input type="number" id="B3" onblur="numericvalidationforB3()"></td>
+            <td><input type="number" id="N3" onblur="numericvalidationforN3()"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="phasein4"></td>
+            <td><input type="number" id="currentin4" onblur="numericvalidationforcurrentin4()"></td>
+            <td><input type="number" id="R4" onblur="numericvalidationforR4() "></td>
+            <td><input type="number" id="Y4" onblur="numericvalidationforY4() "></td>
+            <td><input type="number" id="B4" onblur="numericvalidationforB4()"></td>
+            <td><input type="number" id="N4" onblur="numericvalidationforN4()"></td>
+        </tr>
+
+    </table><br>
+    <table class="table table-striped table-bordered ">
+        <tr>
+            <th colspan="4 ">DOCUMENTATION REVIEW</th>
+        </tr>
+        <tr>
+            <th class="doccontents">Sl.No.</th>
+            <th class="doccontents">Check Points</th>
+            <th class="doccontents">Status</th>
+            <th class="doccontents">Remarks</th>
+        </tr>
+        <tr>
+            <th data-label="Sl. No.">1.</th>
+            <th><textarea id="cp1"></textarea></th>
+            <th><textarea id="st1"></textarea></th>
+            <th><textarea id="re1"></textarea></th>
+        </tr>
+        <tr>
+            <th>2.</th>
+            <th><textarea id="cp2"></textarea></th>
+            <th><textarea id="st2"></textarea></th>
+            <th><textarea id="re2"></textarea></th>
+        </tr>
+        <tr>
+            <th>3.</th>
+            <th><textarea id="cp3"></textarea></th>
+            <th><textarea id="st3"></textarea></th>
+            <th><textarea id="re3"></textarea></th>
+        </tr>
+    </table><br>
+    <div class="d-grid gap-2 d-md-block dcenter ">
+        <button class="btn btn-primary " onclick="save() " type="button ">Save</button>
+        <button class="btn btn-primary " onclick="clearallinputs() " type="button ">Clear</button>
+    </div><br><br>
+</body>
+
+</html>

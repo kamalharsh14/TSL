@@ -1,0 +1,54 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: lighter;
+}
+
+@media(max-width:768px) {
+    #logo {
+        display: none;
+    }
+    .table_container {
+        padding: 2%;
+        margin: 0;
+    }
+    .table thead {
+        display: none;
+    }
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+        display: block;
+        width: 100%;
+    }
+    .table tr {
+        margin-bottom: 15px;
+    }
+    .table tbody tr td {
+        text-align: right;
+        padding: 4% 2% 4% 0%;
+        position: relative;
+    }
+    .table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        font-size: 14px;
+        font-weight: 600;
+        padding-left: 2%;
+        text-align: left;
+    }
+    #head th {
+        display: block;
+        text-align: center;
+    }
+}

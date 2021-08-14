@@ -1,0 +1,86 @@
+let jsontable1: [{
+        "Sno": 1,
+        "Description": document.getElementById("desc1").value,
+        "Status": document.getElementById("cb11").value,
+        "Applicability": document.getElementById("cb12").value,
+        "Remarks": document.getElementById("rem1").value
+    },
+    {
+        "Sno": 2,
+        "Description": document.getElementById("desc2").value,
+        "Status": document.getElementById("cb21").value,
+        "Applicability": document.getElementById("cb22").value,
+        "Remarks": document.getElementById("rem2").value
+    }, {
+        "Sno": 3,
+        "Description": document.getElementById("desc3").value,
+        "Status": document.getElementById("cb31").value,
+        "Applicability": document.getElementById("cb32").value,
+        "Remarks": document.getElementById("rem3").value
+    },
+    {
+        "Sno": 4,
+        "Description": document.getElementById("desc4").value,
+        "Status": document.getElementById("cb41").value,
+        "Applicability": document.getElementById("cb42").value,
+        "Remarks": document.getElementById("rem4").value
+    },
+    {
+        "Sno": 5,
+        "Description": document.getElementById("desc5").value,
+        "Status": document.getElementById("cb51").value,
+        "Applicability": document.getElementById("cb52").value,
+        "Remarks": document.getElementById("rem5").value
+    }
+]
+
+let jsontable2: [{
+        "Phase": document.getElementById("phasein1").value,
+        "Current Injected(A)": document.getElementById("currentin1").value,
+        "R": document.getElementById("R1").value,
+        "Y": document.getElementById("Y1").value,
+        "B": document.getElementById("B1").value,
+        "N": document.getElementById("N1").value
+    },
+    {
+        "Phase": document.getElementById("phasein2").value,
+        "Current Injected(A)": document.getElementById("currentin2").value,
+        "R": document.getElementById("R2").value,
+        "Y": document.getElementById("Y2").value,
+        "B": document.getElementById("B2").value,
+        "N": document.getElementById("N2").value
+    },
+    {
+        "Phase": document.getElementById("phasein3").value,
+        "Current Injected(A)": document.getElementById("currentin3").value,
+        "R": document.getElementById("R3").value,
+        "Y": document.getElementById("Y3").value,
+        "B": document.getElementById("B3").value,
+        "N": document.getElementById("N3").value
+    },
+    {
+        "Phase": document.getElementById("phasein4").value,
+        "Current Injected(A)": document.getElementById("currentin4").value,
+        "R": document.getElementById("R4").value,
+        "Y": document.getElementById("Y4").value,
+        "B": document.getElementById("B4").value,
+        "N": document.getElementById("N4").value
+    }
+]
+
+let jsontable3: [{
+    "SNo": 1,
+    "Check Points": document.getElementById("cp1").value,
+    "Status(Y/N)": document.getElementById("st1").value,
+    "Remarks": document.getElementById("re1").value
+}, {
+    "SNo": 2,
+    "Check Points": document.getElementById("cp2").value,
+    "Status(Y/N)": document.getElementById("st2").value,
+    "Remarks": document.getElementById("re2").value
+}, {
+    "SNo": 3,
+    "Check Points": document.getElementById("ccp3").value,
+    "Status(Y/N)": document.getElementById("st3").value,
+    "Remarks": document.getElementById("re3").value
+}]
