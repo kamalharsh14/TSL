@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="TSL_Table.css">
+    <script src="TSL_Table.js"></script>
+    <title>TSL Table</title>
+    <link rel="icon" href="logo.png">
+</head>
+
+<body>
+
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none; background-color: #f8f9fa;" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large" onclick="w3_close()"><span style='font-size:30px;'>&#8678;</span></button><br>
+
+        <a href="TSL_Home.html" class="w3-bar-item w3-button" style="font-size: 21px; text-decoration: none;"><i
+                class="material-icons" style="font-size:20px;">home</i> Home</a><br>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="w3-bar-item w3-button dropbtn" style="font-size: 21px; text-decoration: none;"><i class="material-icons" style="font-size:20px;">menu</i> Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <br><a href="TSL_Table1.html" class="w3-bar-item w3-button" style="font-size: 15px; text-decoration: none;"><i class="fa fa-table" style="font-size:24px"></i>&nbsp; Protections Summary</a>
+                <a href="TSL_Table2.html" class="w3-bar-item w3-button" style="font-size: 15px; text-decoration: none;"><i class="fa fa-table" style="font-size:24px"></i>&nbsp; Measurement Checks</a>
+                <a href="TSL_Table3.html" class="w3-bar-item w3-button" style="font-size: 15px; text-decoration: none;"><i class="fa fa-table" style="font-size:24px"></i>&nbsp; Documentation Review</a><br>
+                <a href="TSL_Settings.html" class="w3-bar-item w3-button" style="font-size: 21px; text-decoration: none;"><i
+                                class="material-icons" style="font-size:20px;">settings</i> Settings</a><br>
+                <a href="TSL_About.html" class="w3-bar-item w3-button" style="font-size: 21px; text-decoration: none;"><i
+                                class="material-icons" style="font-size:20px;">info</i> About</a><br>
+                <a href="TSL_Contact.html" class="w3-bar-item w3-button" style="font-size: 21px; text-decoration: none;"><i
+                                class="material-icons" style="font-size:20px;">contact_support</i> Contact</a><br>
+            </div>
+        </div><br>
+        <a href="TSL_Settings.html" class="w3-bar-item w3-button" style="font-size: 21px; text-decoration: none;"><i
+                class="material-icons" style="font-size:20px;">settings</i> Settings</a><br>
+        <a href="TSL_About.html" class="w3-bar-item w3-button" style="font-size: 21px; text-decoration: none;"><i
+                class="material-icons" style="font-size:20px;">info</i> About</a><br>
+        <a href="TSL_Contact.html" class="w3-bar-item w3-button" style="font-size: 21px; text-decoration: none;"><i
+                class="material-icons" style="font-size:20px;">contact_support</i> Contact</a><br>
+    </div>
+    <div id="main">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i id="openNav" onclick="w3_open()" class="material-icons">menu</i></a>
+                </li>
+            </ul>
+            &nbsp;&nbsp;&nbsp;
+            <a class="navbar-brand"><img src="linear.png" alt="Tata Steel" class="" width="126" height="37" onclick="TSL_Home.html"></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="TSL_Home.html"><i class="material-icons">home</i><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="material-icons"
+                                onclick="alert('This feature isn&lsquo;t available yet!')">search</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="TSL_Contact.html"><i class="material-icons">person</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="material-icons"
+                                onclick="alert('This feature isn&lsquo;t available yet!')">language</i></a>
+                    </li>
+                </ul>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="navbar-brand"><img src="logo.png" alt="Tata Steel" class="" width="61" height="55" id="logo"></a>
+        </nav>
+    </div>
+    <!-- <div class="table_container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th style="background-color: rgb(30, 138, 209);" colspan="5">PROTECTIONS SUMMARY:</th>
+                </tr>
+                <tr>
+                    <th>S No.</th>
+                    <th colspan="3">Description</th>
+                    <th>Remarks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="head">
+                    <th style="background-color: rgb(30, 138, 209)" colspan="5">PROTECTIONS SUMMARY:</th>
+                </tr>
+                <tr>
+                    <td data-label="S No.">1.</td>
+                    <td data-label="Description:"><input type="text" id="desc1" maxlength="100" onblur="stringvalidationfordesc1()"><br><span id="spdesc1" class="validation"></span></td>
+                    <td data-label="Status:"><input id="cb11" type="checkbox">Yes</td>
+                    <td data-label="Status:"><input id="cb12" type="checkbox">N/A</td>
+                    <td data-label="Remarks:"><input type="text" id="rem1" maxlength="150"> </td>
+                </tr>
+                <tr>
+                    <td data-label="S No.">2.</td>
+                    <td data-label="Description:"><input type="text" id="desc2" maxlength="100" onblur="stringvalidationfordesc2()"><br><span id="spdesc2" class="validation"></span></td>
+                    <td data-label="Status:"><input id="cb21" type="checkbox">Yes</td>
+                    <td data-label="Status:"><input id="cb22" type="checkbox">N/A</td>
+                    <td data-label="Remarks:"><input type="text" id="rem2" maxlength="150"></td>
+                </tr>
+                <tr>
+                    <td data-label="S No.">3.</td>
+                    <td data-label="Description:"><input type="text" id="desc3" maxlength="100" onblur="stringvalidationfordesc3()"><br><span id="spdesc3" class="validation"></span></td>
+                    <td data-label="Status:"><input id="cb31" type="checkbox">Yes</td>
+                    <td data-label="Status:"><input id="cb32" type="checkbox">N/A</td>
+                    <td data-label="Remarks:"><input type="text" id="rem3" maxlength="150"> </td>
+                </tr>
+                <tr>
+                    <td data-label="S No.">4.</td>
+                    <td data-label="Description:"><input type="text" id="desc4" maxlength="100" onblur="stringvalidationfordesc4()"><br><span id="spdesc4" class="validation"></span></td>
+                    <td data-label="Status:"><input id="cb41" type="checkbox">Yes</td>
+                    <td data-label="Status:"><input id="cb42" type="checkbox">N/A</td>
+                    <td data-label="Remarks:"><input type="text" id="rem4" maxlength="150"> </td>
+                </tr>
+                <tr>
+                    <td data-label="S No.">5.</td>
+                    <td data-label="Description:"><input type="text" id="desc5" maxlength="100" onblur="stringvalidationfordesc5()"><br><span id="spdesc5" class="validation"></span></td>
+                    <td data-label="Status:"><input id="cb51" type="checkbox">Yes</td>
+                    <td data-label="Status:"><input id="cb52" type="checkbox">N/A</td>
+                    <td data-label="Remarks:"><input type="text" id="rem5" maxlength="150"> </td>
+                </tr>
+            </tbody>
+        </table><br>
+        <div class="d-grid gap-2 d-md-block dcenter ">
+            <button class="btn btn-success " onclick="save() " type="button " style="width: 100px;">Save</button>&nbsp;&nbsp;&nbsp;
+            <button class="btn btn-primary " onclick="clearallinputsfortable1() " style="width: 100px;" type="button ">Clear</button>
+        </div><br><br>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th style="background-color: rgb(30, 138, 209)" colspan="6">MEASUREMENT CHECKS:</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">Phase</th>
+                    <th rowspan="2">Current Injected(A)</th>
+                    <th colspan="4">Primary Current Displayed on Relay in Amps</th>
+                </tr>
+                <tr>
+                    <th>R</th>
+                    <th>Y</th>
+                    <th>B</th>
+                    <th>N</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="head">
+                    <th style="background-color: rgb(30, 138, 209)" colspan="6">MEASUREMENT CHECKS:</th>
+                </tr>
+                <tr>
+                    <td data-label="Phase:"><input type="text" id="phasein1"></td>
+                    <td data-label="Current Injected(A):"><input type="number" id="currentin1" onblur="numericvalidationforcurrentin1()"><br> <span id="spcurrentin1" class="validation"></span></td>
+                    <td data-label="R:"><input type="number" id="R1" onblur="numericvalidationforR1()"><br> <span id="spR1" class="validation"></span></td>
+                    <td data-label="Y:"><input type="number" id="Y1" onblur="numericvalidationforY1()"><br> <span id="spY1" class="validation"></span></td>
+                    <td data-label="B:"><input type="number" id="B1" onblur="numericvalidationforB1()"><br> <span id="spB1" class="validation"></span></td>
+                    <td data-label="N:"><input type="number" id="N1" onblur="numericvalidationforN1()"><br> <span id="spN1" class="validation"></span></td>
+                </tr>
+                <tr>
+                    <td data-label="Phase:"><input type="text" id="phasein2"></td>
+                    <td data-label="Current Injected(A):"><input type="number" id="currentin2" onblur="numericvalidationforcurrentin2()"><br> <span id="spcurrentin2" class="validation"></span></td>
+                    <td data-label="R:"><input type="number" id="R2" onblur="numericvalidationforR2()"><br> <span id="spR2" class="validation"></span></td>
+                    <td data-label="Y:"><input type="number" id="Y2" onblur="numericvalidationforY2()"><br> <span id="spY2" class="validation"></span></td>
+                    <td data-label="B:"><input type="number" id="B2" onblur="numericvalidationforB2()"><br> <span id="spB2" class="validation"></span></td>
+                    <td data-label="N:"><input type="number" id="N2" onblur="numericvalidationforN2()"><br> <span id="spN2" class="validation"></span></td>
+                </tr>
+                <tr>
+                    <td data-label="Phase:"><input type="text" id="phasein3"></td>
+                    <td data-label="Current Injected(A):"><input type="number" id="currentin3" onblur="numericvalidationforcurrentin3()"><br> <span id="spcurrentin3" class="validation"></span></td>
+                    <td data-label="R:"><input type="number" id="R3" onblur="numericvalidationforR3()"><br> <span id="spR3" class="validation"></span></td>
+                    <td data-label="Y:"><input type="number" id="Y3" onblur="numericvalidationforY3() "><br> <span id="spY3" class="validation"></span></td>
+                    <td data-label="B:"><input type="number" id="B3" onblur="numericvalidationforB3()"><br> <span id="spB3" class="validation"></span></td>
+                    <td data-label="N:"><input type="number" id="N3" onblur="numericvalidationforN3()"><br> <span id="spN3" class="validation"></span></td>
+                </tr>
+                <tr>
+                    <td data-label="Phase:"><input type="text" id="phasein4"></td>
+                    <td data-label="Current Injected(A):"><input type="number" id="currentin4" onblur="numericvalidationforcurrentin4()"><br> <span id="spcurrentin4" class="validation"></span></td>
+                    <td data-label="R:"><input type="number" id="R4" onblur="numericvalidationforR4() "><br> <span id="spR4" class="validation"></span></td>
+                    <td data-label="Y:"><input type="number" id="Y4" onblur="numericvalidationforY4() "><br> <span id="spY4" class="validation"></span></td>
+                    <td data-label="B:"><input type="number" id="B4" onblur="numericvalidationforB4()"><br> <span id="spB4" class="validation"></span></td>
+                    <td data-label="N:"><input type="number" id="N4" onblur="numericvalidationforN4()"><br> <span id="spN4" class="validation"></span></td>
+                </tr>
+            </tbody>
+        </table><br>
+        <div class="d-grid gap-2 d-md-block dcenter ">
+            <button class="btn btn-success " onclick="save() " type="button " style="width: 100px;">Save</button>&nbsp;&nbsp;&nbsp;
+            <button class="btn btn-primary " onclick="clearallinputsfortable2() " type="button " style="width: 100px;">Clear</button>
+        </div><br><br>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th style="background-color: rgb(30, 138, 209)" colspan="4">DOCUMENTATION REVIEW:</th>
+                </tr>
+                <tr>
+                    <th>S No.</th>
+                    <th>Checkpoints</th>
+                    <th>Status</th>
+                    <th>Remarks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="head">
+                    <th style="background-color: rgb(30, 138, 209)" colspan="4">DOCUMENTATION REVIEW:</th>
+                </tr>
+                <tr>
+                    <td data-label="Sl No.">1.</td>
+                    <td data-label="Check Points:"><input type="text" id="cp1"></td>
+                    <td data-label="Status:"><input type="text" id="st1" style="text-transform: uppercase;" maxlength="1" onblur="charactervalidationforst1()"><br> <span id="spst1" class="validation"></span></td>
+                    <td data-label="Remarks:"><input type="text" id="re1" onblur="stringvalidationforre1()"><br><span id="spre1"></span></td>
+                </tr>
+                <tr>
+                    <td data-label="Sl No.">2.</td>
+                    <td data-label="Check points:"><input type="text" id="cp2"></td>
+                    <td data-label="Status:"><input type="text" id="st2" style="text-transform: uppercase;" maxlength="1" onblur="charactervalidationforst2()"><br> <span id="spst2" class="validation"></span></td>
+                    <td data-label="Remarks:"><input type="text:" id="re2" onblur="stringvalidationforre2()"><br><span id="spre2"></span></td>
+                </tr>
+                <tr>
+                    <td data-label="Sl No.">3.</td>
+                    <td data-label="Check points:"><input type="text" id="cp3"></td>
+                    <td data-label="Status:"><input type="text" id="st3" style="text-transform: uppercase;" maxlength="1" onblur="charactervalidationforst3()"><br> <span id="spst3" class="validation"></span></td>
+                    <td data-label="Remarks:"><input type="text" id="re3" onblur="stringvalidationforre3()"><br><span id="spre3"></span></td>
+                </tr>
+            </tbody>
+        </table><br>
+        <div class="d-grid gap-2 d-md-block dcenter ">
+            <button class="btn btn-success " onclick="save() " type="button " style="width: 100px;">Save</button>&nbsp;&nbsp;&nbsp;
+            <button class="btn btn-primary " onclick="clearallinputsfortable3() " type="button " style="width: 100px;">Clear</button>
+        </div><br><br>
+    </div> -->
+</body>
+
+</html>
